@@ -9,8 +9,15 @@
 <body>
     <script>
         // take a number from user using JS prompt
-
+        var num=prompt("Enter a number:");
+        document.write("Number:",num,"<br>");
+        document.write("25 preceeding numbers..... <br>");
         // find 25 preceding numbers of input provided
+        let count=0;
+        for (let index =num; count<=25; index++) {
+           document.write(`${index+1}`,"<br>");
+            count++;
+        }
     </script>
 </body>
 </html>

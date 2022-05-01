@@ -9,13 +9,13 @@
 <body>
     <script>
         let age = '22';
+        document.write(typeof(age),"<br>");
         //change given string into number without using any function or any binary operations
-
-
-
+        age=+age;
+        document.write(typeof(age),"<br>");
         //change given string into numbers uisng JS Math functions
-
-        
+        age=Math.floor(age);
+        document.write(typeof(age),"<br>");  
     </script>
 </body>
 </html>

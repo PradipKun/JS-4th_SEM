@@ -13,7 +13,23 @@
 
        //check if number is exactly divided by 10
        // if it is divided, then determine if it is a even number or odd number
-
+        if(number%10==0){
+            if(number%2==0){
+                document.write("Number is even and divided by 10");
+            }
+            else{
+                document.write("Number is odd and divided by 10");
+            }
+        }
+        else{
+            number=number%10;
+            if(number%2==0){
+                document.write("Number is even and not  divided by 10");
+            }
+            else{
+                document.write("Number is odd and  not divided by 10");
+            }
+        }
        // if it in not divided, find the remainder
        // determine if remainder is even or odd.
 

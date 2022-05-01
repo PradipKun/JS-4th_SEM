@@ -9,8 +9,15 @@
 <body>
     <script>
         // find the reverse of given number using for loop
-        
-
+        var num=prompt("Enter the number:");
+        var rev=0;
+        document.write("Given num:",num,"<br>");
+        for (let index = 0; num!=0; index++){
+            rem=num%10;
+             num=num/10;
+             rev=rev*10+rem;
+        }
+       document.write("Reverse of number:",rev);
     </script>
 </body>
 </html>

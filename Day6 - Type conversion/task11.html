@@ -10,10 +10,21 @@
     <script>
       
       let a = '', b = 90, c = null, e = "Sudeep";
-
+      document.write("Before:<br>");
+      document.write(typeof(a),"<br>");
+      document.write(typeof(b),"<br>");
+      document.write(typeof(c),"<br>");
+      document.write(typeof(e));
       //change all vars into boolean data type
-        
-
+     a=Boolean(a);
+     b=Boolean(b);
+     c=Boolean(c);
+     e=Boolean(e);   
+     document.write("<br>After:<br>");
+      document.write(typeof(a),"<br>");
+      document.write(typeof(b),"<br>");
+      document.write(typeof(c),"<br>");
+      document.write(typeof(e));
     </script>
 </body>
 </html>

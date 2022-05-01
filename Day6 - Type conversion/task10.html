@@ -9,14 +9,18 @@
 <body>
     <script>
         let a = null, b = undefined, c = false, d = true;
-
+        document.write(typeof(a),"<br>");
+        document.write(typeof(b),"<br>");
+        document.write(typeof(c),"<br>");
+        document.write(typeof(d),"<br>");
         //change all given data into string data type explicitly
-
-
-
+        a=String(a);
+        b=String(b);
+        c=String(c);
+        d=String(d);
         // demonstrate the use of toString() function
-
-
+        a=toString(a);
+        document.write(a); //gives result [object undefined]
         // String() takes null and undefined and converts them to string. 
         // However, toString() gives error when null are passed.
         

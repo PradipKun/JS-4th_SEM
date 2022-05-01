@@ -9,16 +9,27 @@
 <body>
     <script>
         // take two numbers using JS prompts
-
+        var num1=prompt("Enter first jnumber:");
+        var num2=prompt("Enter second number:");
         //num1
-
+        document.write("Number1:",num1,"<br>");
+        document.write("Number2:",num2,"<br>");
         //num2
-
         let choice = prompt("Enter your choice: \n 1. sum \n 2. product 3. difference 4. Quit");
 
         // use if else if statements to calculate sum, product, difference untill the user choose to quit
         // hint: use do while loop.
-
+        while(1){
+            if(choice==1){
+                document.write("Sum:",num1+num2);
+            }
+            else if(choice==2){
+                document.write("Product:",num1*num2);
+            }
+            else{
+                document.write("Difference:",num1-num2);
+            } 
+        }
 
     </script>
 </body>
